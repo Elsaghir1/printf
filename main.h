@@ -60,6 +60,9 @@ int _putchar(int c);
 int _isdigit(int c);
 int _strlen(char *s);
 
+/* convert.c*/
+char *convert(long int num, int base, int flags, params_t *params);
+
 /* specifier.c module */
 int (*get_specifier(char *s))(va_list ap, params_t *params);
 int get_print_func(char *s, va_list ap, params_t *params);

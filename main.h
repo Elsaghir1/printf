@@ -57,6 +57,8 @@ typedef struct specifier
 /* _put.c module */
 int _puts(char *str);
 int _putchar(int c);
+int _isdigit(int c);
+int _strlen(char *s);
 
 /* specifier.c module */
 int (*get_specifier(char *s))(va_list ap, params_t *params);

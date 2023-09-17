@@ -70,4 +70,7 @@ char *get_width(char *s, params_t *params, va_list ap);
 /* params.c module */
 void init_params(params_t *params, va_list ap);
 
+/* string_fields.c modoule */
+char *get_precision(char *p, params_t *params, va_list ap);
+
 #endif

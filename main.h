@@ -76,4 +76,7 @@ void init_params(params_t *params, va_list ap);
 /* string_fields.c modoule */
 char *get_precision(char *p, params_t *params, va_list ap);
 
+/* _printf.c */
+int _printf(const char *format, ...);
+
 #endif

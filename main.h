@@ -85,10 +85,6 @@ void init_params(params_t *params, va_list ap);
 /* string_fields.c modoule */
 char *get_precision(char *p, params_t *params, va_list ap);
 
-<<<<<<< HEAD
-/* _printf.c */
-int _printf(const char *format, ...);
-=======
 /* simple_print_func1.c */
 int print_char(va_list ap, params_t *params);
 int print_int(va_list ap, params_t *params);
@@ -115,5 +111,8 @@ int print_hex(va_list ap, params_t *params);
 int print_HEX(va_list ap, params_t *params);
 int print_binary(va_list ap, params_t *params);
 int print_octal(va_list ap, params_t *params);
+
+/*_printf.c*/
+int _printf(const char *format, ...);
 
 #endif

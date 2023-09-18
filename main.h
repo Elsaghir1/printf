@@ -115,6 +115,5 @@ int print_hex(va_list ap, params_t *params);
 int print_HEX(va_list ap, params_t *params);
 int print_binary(va_list ap, params_t *params);
 int print_octal(va_list ap, params_t *params);
->>>>>>> a2d8797f2d6f8710bbb232c557bbc811d43ed966
 
 #endif

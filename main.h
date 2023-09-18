@@ -7,6 +7,17 @@
 #include <limits.h>
 #include <stdlib.h>
 
+#define OUTPUT_BUF_SIZE 1024
+#define BUF_FLUSH -1
+
+
+#define NULL_STRING "(null)"
+
+#define PARAMS_INIT {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+
+#define CONVERT_LOWERCASE	1
+#define CONVERT_UNSIGNED	2
+
 /**
  * struct parameters - parameters struct
  *
@@ -57,8 +68,6 @@ typedef struct specifier
 /* _put.c module */
 int _puts(char *str);
 int _putchar(int c);
-int _isdigit(int c);
-int _strlen(char *s);
 
 /* convert.c*/
 char *convert(long int num, int base, int flags, params_t *params);
@@ -93,6 +102,8 @@ int print_rev(va_list ap, params_t *params);
 int print_rot13(va_list ap, params_t *params);
 
 /* print_numbers.c */
+int _isdigit(int c);
+int _strlen(char *s);
 int print_number(char *str, params_t *params);
 int print_number_right_shift(char *str, params_t *params);
 int print_number_left_shift(char *str, params_t *params);
